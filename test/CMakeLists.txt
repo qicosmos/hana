@@ -85,7 +85,8 @@ endif()
 # of public headers and the tests that require Boost from the list of tests.
 if (NOT Boost_FOUND)
     boost_hana_list_remove_glob(BOOST_HANA_TEST_SOURCES GLOB_RECURSE
-        "ext/boost/*.cpp")
+        "ext/boost/*.cpp"
+        "detail/as_container_element/boost_ref.cpp")
 
     boost_hana_list_remove_glob(BOOST_HANA_PUBLIC_HEADERS GLOB_RECURSE
         "${Boost.Hana_SOURCE_DIR}/include/boost/hana/ext/boost/*.hpp"
