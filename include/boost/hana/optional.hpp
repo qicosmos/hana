@@ -14,6 +14,7 @@ Distributed under the Boost Software License, Version 1.0.
 
 #include <boost/hana/bool.hpp>
 #include <boost/hana/core/tag_of.hpp>
+#include <boost/hana/detail/as_container_element.hpp>
 #include <boost/hana/detail/operators/adl.hpp>
 #include <boost/hana/detail/operators/comparable.hpp>
 #include <boost/hana/detail/operators/monad.hpp>
@@ -72,14 +73,14 @@ namespace boost { namespace hana {
         constexpr T const& operator*() const& { return this->val; }
         constexpr T operator*() && { return std::move(this->val); }
 
-        constexpr T* operator->() & { return &this->val; }
-        constexpr T const* operator->() const& { return &this->val; }
+        constexpr auto operator->() & { return &this->val; }
+        constexpr auto operator->() const& { return &this->val; }
     };
 
     //! @cond
     template <typename T>
     constexpr auto make_just_t::operator()(T&& t) const {
-        return optional<typename std::decay<T>::type>(
+        return optional<detail::as_container_element_t<T>>(
             static_cast<T&&>(t)
         );
     }

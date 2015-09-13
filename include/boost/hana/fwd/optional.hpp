@@ -147,6 +147,11 @@ namespace boost { namespace hana {
     //! `make<optional_tag>(x)` is equivalent to `just(x)`. This is provided
     //! for consistency with the other `make<...>` functions.
     //!
+    //! @note
+    //! `make<optional_tag>` supports reference wrappers. When a reference
+    //! wrapper is passed to it, the resulting `hana::optional` will hold a
+    //! reference to the object instead of the object itself.
+    //!
     //!
     //! Example
     //! -------
