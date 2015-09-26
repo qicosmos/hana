@@ -13,7 +13,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/core/when.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! Returns whether the iterable is empty.
     //! @relates Iterable
     //!
@@ -43,6 +43,6 @@ namespace boost { namespace hana {
 
     constexpr is_empty_t is_empty{};
 #endif
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FWD_IS_EMPTY_HPP

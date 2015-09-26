@@ -21,7 +21,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <type_traits>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     template <typename R>
     struct one_t {
     #ifndef BOOST_HANA_CONFIG_DISABLE_CONCEPT_CHECKS
@@ -73,6 +73,6 @@ namespace boost { namespace hana {
         static constexpr decltype(auto) apply()
         { return hana::to<C>(detail::constant_from_one<C>{}); }
     };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_ONE_HPP

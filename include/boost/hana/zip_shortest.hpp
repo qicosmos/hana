@@ -19,7 +19,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/zip_shortest_with.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! @cond
     template <typename Xs, typename ...Ys>
     constexpr auto zip_shortest_t::operator()(Xs&& xs, Ys&& ...ys) const {
@@ -45,6 +45,6 @@ namespace boost { namespace hana {
                                            static_cast<Xs&&>(xs)...);
         }
     };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_ZIP_SHORTEST_HPP

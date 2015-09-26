@@ -18,13 +18,13 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/zero.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     template <typename M>
     struct Monoid {
         using Tag = typename tag_of<M>::type;
         static constexpr bool value = !is_default<zero_impl<Tag>>::value &&
                                       !is_default<plus_impl<Tag, Tag>>::value;
     };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_CONCEPT_MONOID_HPP

@@ -21,7 +21,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/take.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! @cond
     template <typename Xs, typename N, typename Elements>
     constexpr auto insert_range_t::operator()(Xs&& xs, N&& n, Elements&& elements) const {
@@ -58,6 +58,6 @@ namespace boost { namespace hana {
                 );
         }
     };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_INSERT_RANGE_HPP

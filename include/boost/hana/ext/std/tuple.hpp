@@ -34,7 +34,7 @@ Distributed under the Boost Software License, Version 1.0.
           in the tuple implementation.
 #endif
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     namespace ext { namespace std { struct tuple_tag; }}
 
     template <typename ...Xs>
@@ -165,6 +165,6 @@ namespace boost { namespace hana {
     struct Sequence<ext::std::tuple_tag> {
         static constexpr bool value = true;
     };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_EXT_STD_TUPLE_HPP

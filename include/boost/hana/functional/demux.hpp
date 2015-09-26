@@ -17,7 +17,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <utility>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! @ingroup group-functional
     //! Invoke a function with the results of invoking other functions
     //! on its arguments.
@@ -263,6 +263,6 @@ namespace boost { namespace hana {
 
     constexpr make_pre_demux_t demux{};
 #endif
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FUNCTIONAL_DEMUX_HPP

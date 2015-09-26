@@ -10,7 +10,7 @@ Distributed under the Boost Software License, Version 1.0.
 #ifndef BOOST_HANA_FWD_CONCEPT_MONAD_HPP
 #define BOOST_HANA_FWD_CONCEPT_MONAD_HPP
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! @ingroup group-concepts
     //! The `Monad` concept represents `Applicative`s with the ability to
     //! flatten nested levels of structure.
@@ -182,6 +182,6 @@ namespace boost { namespace hana {
     //! [1]: https://byorgey.wordpress.com/2009/01/12/abstraction-intuition-and-the-monad-tutorial-fallacy/
     template <typename M>
     struct Monad;
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FWD_CONCEPT_MONAD_HPP

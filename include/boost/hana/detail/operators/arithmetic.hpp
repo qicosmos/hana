@@ -21,7 +21,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <type_traits>
 
 
-namespace boost { namespace hana { namespace detail {
+namespace boost { namespace hana { inline namespace v1 { namespace detail {
     template <typename Tag>
     struct arithmetic_operators {
         static constexpr bool value = false;
@@ -72,6 +72,6 @@ namespace boost { namespace hana { namespace detail {
         constexpr auto operator%(X&& x, Y&& y)
         { return hana::mod(static_cast<X&&>(x), static_cast<Y&&>(y)); }
     } // end namespace operators
-}}} // end namespace boost::hana::detail
+}}}} // end namespace boost::hana::v1::detail
 
 #endif // !BOOST_HANA_DETAIL_OPERATORS_ARITHMETIC_HPP

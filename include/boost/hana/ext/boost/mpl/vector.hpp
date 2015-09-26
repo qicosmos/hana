@@ -37,7 +37,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <type_traits>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     namespace ext { namespace boost { namespace mpl {
         //! @ingroup group-ext
         //! Adapter for Boost.MPL vectors.
@@ -163,6 +163,6 @@ namespace boost { namespace hana {
             return typename decltype(vector_type)::type{};
         }
     };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_EXT_BOOST_MPL_VECTOR_HPP

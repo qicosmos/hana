@@ -13,7 +13,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/core/when.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! Zip one sequence or more with a given function.
     //! @relates Sequence
     //!
@@ -56,6 +56,6 @@ namespace boost { namespace hana {
 
     constexpr zip_shortest_with_t zip_shortest_with{};
 #endif
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FWD_ZIP_SHORTEST_WITH_HPP

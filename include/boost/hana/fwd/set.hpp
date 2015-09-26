@@ -14,7 +14,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/fwd/core/make.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! @ingroup group-datatypes
     //! Basic unordered container requiring compile-time `Comparable` elements.
     //!
@@ -156,6 +156,6 @@ namespace boost { namespace hana {
         return tag-dispatched;
     };
 #endif
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FWD_SET_HPP

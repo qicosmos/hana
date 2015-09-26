@@ -21,7 +21,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/one.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     template <typename R>
     struct product_t {
     #ifndef BOOST_HANA_CONFIG_DISABLE_CONCEPT_CHECKS
@@ -52,6 +52,6 @@ namespace boost { namespace hana {
             return hana::fold_left(static_cast<Xs&&>(xs), hana::one<R>(), hana::mult);
         }
     };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_PRODUCT_HPP

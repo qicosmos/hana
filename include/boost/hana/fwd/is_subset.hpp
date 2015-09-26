@@ -15,7 +15,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/functional/infix.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! Returns whether a structure contains a subset of the keys of
     //! another structure.
     //! @relates Searchable
@@ -81,6 +81,6 @@ namespace boost { namespace hana {
 
     constexpr auto is_subset = hana::infix(is_subset_t{});
 #endif
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FWD_IS_SUBSET_HPP

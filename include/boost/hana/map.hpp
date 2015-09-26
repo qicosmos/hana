@@ -54,7 +54,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <utility>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //////////////////////////////////////////////////////////////////////////
     // operators
     //////////////////////////////////////////////////////////////////////////
@@ -291,6 +291,6 @@ namespace boost { namespace hana {
             );
         }
     };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_MAP_HPP

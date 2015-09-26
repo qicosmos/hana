@@ -30,7 +30,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <cstddef>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! @cond
     template <typename Xs, typename Pred>
     constexpr auto any_of_t::operator()(Xs&& xs, Pred&& pred) const {
@@ -184,6 +184,6 @@ namespace boost { namespace hana {
                     hana::compose(static_cast<Pred&&>(pred), hana::first));
         }
     };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_ANY_OF_HPP

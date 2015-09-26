@@ -17,7 +17,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <cstddef>
 
 
-namespace boost { namespace hana { namespace detail { namespace variadic {
+namespace boost { namespace hana { inline namespace v1 { namespace detail { namespace variadic {
     struct take_impl2 {
         template <typename F, typename ...Xs>
         constexpr decltype(auto) operator()(F&& f, Xs&& ...xs) const {
@@ -45,6 +45,6 @@ namespace boost { namespace hana { namespace detail { namespace variadic {
 
     template <std::size_t n>
     constexpr take_t<n> take{};
-}}}} // end namespace boost::hana::detail::variadic
+}}}}} // end namespace boost::hana::v1::detail::variadic
 
 #endif // !BOOST_HANA_DETAIL_VARIADIC_TAKE_HPP

@@ -26,7 +26,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <utility>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //////////////////////////////////////////////////////////////////////////
     // to
     //////////////////////////////////////////////////////////////////////////
@@ -158,6 +158,6 @@ namespace boost { namespace hana {
         static constexpr decltype(auto) apply(Xs&& xs)
         { return hana::unpack(static_cast<Xs&&>(xs), hana::make<S>); }
     };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_CORE_CONVERT_HPP

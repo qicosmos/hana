@@ -16,7 +16,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/core/when.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! @cond
     template <typename Datatype, typename>
     struct make_impl : make_impl<Datatype, when<true>> { };
@@ -39,6 +39,6 @@ namespace boost { namespace hana {
         static constexpr decltype(auto) apply(X&& ...x)
         { return make_helper(int{}, static_cast<X&&>(x)...); }
     };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_CORE_MAKE_HPP

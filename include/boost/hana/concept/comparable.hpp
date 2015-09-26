@@ -17,12 +17,12 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/equal.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     template <typename T>
     struct Comparable {
         using Tag = typename tag_of<T>::type;
         static constexpr bool value = !is_default<equal_impl<Tag, Tag>>::value;
     };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_CONCEPT_COMPARABLE_HPP

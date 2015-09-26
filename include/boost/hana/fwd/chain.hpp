@@ -13,7 +13,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/core/when.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! Feed a monadic value into a monadic computation.
     //! @relates Monad
     //!
@@ -61,6 +61,6 @@ namespace boost { namespace hana {
 
     constexpr chain_t chain{};
 #endif
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FWD_CHAIN_HPP

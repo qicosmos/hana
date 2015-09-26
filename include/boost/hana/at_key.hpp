@@ -25,7 +25,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/second.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! @cond
     template <typename Xs, typename Key>
     constexpr decltype(auto) at_key_t::operator()(Xs&& xs, Key&& key) const {
@@ -61,6 +61,6 @@ namespace boost { namespace hana {
             return accessor(static_cast<X&&>(x));
         }
     };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_AT_KEY_HPP

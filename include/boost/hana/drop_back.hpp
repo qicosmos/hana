@@ -24,7 +24,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <utility>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! @cond
     template <typename Xs, typename N>
     constexpr auto drop_back_t::operator()(Xs&& xs, N const& n) const {
@@ -69,6 +69,6 @@ namespace boost { namespace hana {
                                     std::make_index_sequence<(n > len ? 0 : len - n)>{});
         }
     };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_DROP_BACK_HPP

@@ -26,7 +26,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <utility>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //////////////////////////////////////////////////////////////////////////
     // pair
     //////////////////////////////////////////////////////////////////////////
@@ -141,6 +141,6 @@ namespace boost { namespace hana {
         static constexpr decltype(auto) apply(P&& p)
         { return hana::get_impl<1>(static_cast<P&&>(p).storage_); }
     };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_PAIR_HPP

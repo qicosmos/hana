@@ -30,7 +30,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <utility>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //////////////////////////////////////////////////////////////////////////
     // integral_constant
     //////////////////////////////////////////////////////////////////////////
@@ -215,6 +215,6 @@ namespace boost { namespace hana {
         apply(hana::false_ const&, Then&&, Else&& e)
         { return static_cast<Else&&>(e); }
     };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_BOOL_HPP

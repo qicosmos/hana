@@ -26,7 +26,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <utility>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     namespace ext { namespace boost { struct tuple_tag; }}
 
     template <typename ...Xs>
@@ -119,6 +119,6 @@ namespace boost { namespace hana {
             >{static_cast<Xs&&>(xs)...};
         }
     };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_EXT_BOOST_TUPLE_HPP

@@ -13,7 +13,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/fwd/core/make.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! @ingroup group-datatypes
     //! `hana::lazy` implements superficial laziness via a monadic interface.
     //!
@@ -114,6 +114,6 @@ namespace boost { namespace hana {
     //! -------
     //! @include example/lazy/make.cpp
     constexpr auto make_lazy = make<lazy_tag>;
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FWD_LAZY_HPP

@@ -17,12 +17,12 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/core/tag_of.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     template <typename S>
     struct Struct {
         using Tag = typename tag_of<S>::type;
         static constexpr bool value = !is_default<accessors_impl<Tag>>::value;
     };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_CONCEPT_STRUCT_HPP

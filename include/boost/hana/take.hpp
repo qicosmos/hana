@@ -24,7 +24,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <utility>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! @cond
     template <typename Xs, typename N>
     constexpr auto take_t::operator()(Xs&& xs, N const& n) const {
@@ -69,6 +69,6 @@ namespace boost { namespace hana {
             return hana::take(static_cast<Xs&&>(xs), hana::size_c<n>);
         }
     };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_TAKE_HPP

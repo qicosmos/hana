@@ -21,7 +21,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/zero.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     template <typename M>
     struct sum_t {
     #ifndef BOOST_HANA_CONFIG_DISABLE_CONCEPT_CHECKS
@@ -52,6 +52,6 @@ namespace boost { namespace hana {
             return hana::fold_left(static_cast<Xs&&>(xs), hana::zero<M>(), hana::plus);
         }
     };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_SUM_HPP

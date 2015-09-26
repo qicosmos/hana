@@ -19,7 +19,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/transform.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! @cond
     template <typename Object>
     constexpr auto members_t::operator()(Object&& object) const {
@@ -59,6 +59,6 @@ namespace boost { namespace hana {
             );
         }
     };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_MEMBERS_HPP

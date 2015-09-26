@@ -13,7 +13,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/core/when.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! Combine a monadic structure with itself `n` times.
     //! @relates MonadPlus
     //!
@@ -70,6 +70,6 @@ namespace boost { namespace hana {
 
     constexpr cycle_t cycle{};
 #endif
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FWD_CYCLE_HPP

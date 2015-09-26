@@ -18,7 +18,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <utility>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! @ingroup group-functional
     //! Create simple functions representing C++ operators inline.
     //!
@@ -257,6 +257,6 @@ namespace boost { namespace hana {
 
     constexpr placeholder_detail::placeholder _{};
 #endif
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FUNCTIONAL_PLACEHOLDER_HPP

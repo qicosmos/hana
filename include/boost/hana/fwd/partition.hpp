@@ -15,7 +15,7 @@ Distributed under the Boost Software License, Version 1.0.
 
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! Partition a sequence based on a `predicate`.
     //! @relates Sequence
     //!
@@ -83,6 +83,6 @@ namespace boost { namespace hana {
 
     constexpr partition_t partition{};
 #endif
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FWD_PARTITION_HPP

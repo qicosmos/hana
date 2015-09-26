@@ -16,7 +16,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <type_traits>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! Tag representing `hana::integral_constant`.
     //! @relates hana::integral_constant
     template <typename T>
@@ -331,6 +331,6 @@ namespace boost { namespace hana {
         template <char ...c>
         constexpr auto operator"" _c();
     }
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FWD_INTEGRAL_CONSTANT_HPP

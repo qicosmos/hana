@@ -18,13 +18,13 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/transform.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     template <typename F>
     struct Functor {
         using Tag = typename tag_of<F>::type;
         static constexpr bool value = !is_default<transform_impl<Tag>>::value ||
                                       !is_default<adjust_if_impl<Tag>>::value;
     };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_CONCEPT_FUNCTOR_HPP

@@ -47,7 +47,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <utility>
 
 
-namespace boost { namespace hana { namespace struct_detail {
+namespace boost { namespace hana { inline namespace v1 { namespace struct_detail {
     template <typename Memptr, Memptr ptr>
     struct member_ptr {
         template <typename T>
@@ -72,7 +72,7 @@ namespace boost { namespace hana { namespace struct_detail {
         constexpr std::size_t len = strlen(hana::at_c<n>(Names::get()));
         return prepare_member_name_impl<n, Names>(std::make_index_sequence<len>{});
     }
-}}}
+}}}} // end namespace boost::hana::v1::struct_detail
 
 //////////////////////////////////////////////////////////////////////////////
 // BOOST_HANA_ADAPT_STRUCT

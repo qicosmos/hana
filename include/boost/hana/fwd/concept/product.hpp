@@ -10,7 +10,7 @@ Distributed under the Boost Software License, Version 1.0.
 #ifndef BOOST_HANA_FWD_CONCEPT_PRODUCT_HPP
 #define BOOST_HANA_FWD_CONCEPT_PRODUCT_HPP
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! @ingroup group-concepts
     //! Represents types that are generic containers of two elements.
     //!
@@ -94,6 +94,6 @@ namespace boost { namespace hana {
     //! [1]: http://en.wikipedia.org/wiki/Product_(category_theory)
     template <typename P>
     struct Product;
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FWD_CONCEPT_PRODUCT_HPP

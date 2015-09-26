@@ -10,7 +10,7 @@ Distributed under the Boost Software License, Version 1.0.
 #ifndef BOOST_HANA_FWD_CONCEPT_ORDERABLE_HPP
 #define BOOST_HANA_FWD_CONCEPT_ORDERABLE_HPP
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! @ingroup group-concepts
     //! The `Orderable` concept represents totally ordered data types.
     //!
@@ -178,6 +178,6 @@ namespace boost { namespace hana {
     //! [4]: http://en.wikipedia.org/wiki/Strict_weak_ordering
     template <typename Ord>
     struct Orderable;
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FWD_CONCEPT_ORDERABLE_HPP

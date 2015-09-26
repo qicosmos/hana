@@ -13,7 +13,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/core/when.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! Replace all the elements of a structure that compare equal
     //! to some `value` with some new fixed value.
     //! @relates Functor
@@ -58,6 +58,6 @@ namespace boost { namespace hana {
 
     constexpr replace_t replace{};
 #endif
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FWD_REPLACE_HPP

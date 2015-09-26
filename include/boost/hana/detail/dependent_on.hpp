@@ -10,12 +10,12 @@ Distributed under the Boost Software License, Version 1.0.
 #ifndef BOOST_HANA_DETAIL_DEPENDENT_ON_HPP
 #define BOOST_HANA_DETAIL_DEPENDENT_ON_HPP
 
-namespace boost { namespace hana { namespace detail {
+namespace boost { namespace hana { inline namespace v1 { namespace detail {
     template <bool dummy, typename T>
     struct dependent_on { using type = T; };
 
     template <bool dummy, typename T>
     using dependent_on_t = typename dependent_on<dummy, T>::type;
-}}} // end namespace boost::hana::detail
+}}}} // end namespace boost::hana::v1::detail
 
 #endif // !BOOST_HANA_DETAIL_DEPENDENT_ON_HPP

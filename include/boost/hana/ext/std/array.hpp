@@ -27,7 +27,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <utility>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     namespace ext { namespace std { struct array_tag; }}
 
     template <typename T, std::size_t N>
@@ -127,6 +127,6 @@ namespace boost { namespace hana {
             );
         }
     };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_EXT_STD_ARRAY_HPP

@@ -16,7 +16,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <cstddef>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! @ingroup group-functional
     //! Applies another function `n` times to its argument.
     //!
@@ -195,6 +195,6 @@ namespace boost { namespace hana {
     template <std::size_t n>
     constexpr make_iterate_t<n> iterate{};
 #endif
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FUNCTIONAL_ITERATE_HPP

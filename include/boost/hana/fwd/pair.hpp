@@ -13,7 +13,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/fwd/core/make.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! @ingroup group-datatypes
     //! Generic container for two elements.
     //!
@@ -123,6 +123,6 @@ namespace boost { namespace hana {
     //! -------
     //! @include example/pair/make.cpp
     constexpr auto make_pair = make<pair_tag>;
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FWD_PAIR_HPP

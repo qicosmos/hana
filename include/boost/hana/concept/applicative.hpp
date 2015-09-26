@@ -18,13 +18,13 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/lift.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     template <typename A>
     struct Applicative {
         using Tag = typename tag_of<A>::type;
         static constexpr bool value = !is_default<ap_impl<Tag>>::value &&
                                       !is_default<lift_impl<Tag>>::value;
     };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_CONCEPT_APPLICATIVE_HPP

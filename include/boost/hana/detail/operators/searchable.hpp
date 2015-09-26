@@ -13,7 +13,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/fwd/at_key.hpp>
 
 
-namespace boost { namespace hana { namespace detail {
+namespace boost { namespace hana { inline namespace v1 { namespace detail {
     template <typename Derived>
     struct searchable_operators {
         template <typename Key>
@@ -34,6 +34,6 @@ namespace boost { namespace hana { namespace detail {
                                 static_cast<Key&&>(key));
         }
     };
-}}} // end namespace boost::hana::detail
+}}}} // end namespace boost::hana::v1::detail
 
 #endif // !BOOST_HANA_DETAIL_OPERATORS_SEARCHABLE_HPP

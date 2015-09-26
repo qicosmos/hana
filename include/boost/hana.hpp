@@ -40,10 +40,10 @@ Distributed under the Boost Software License, Version 1.0.
 //! @defgroup group-details Details
 //! Implementation details.
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! Namespace containing C++14 user-defined literals provided by Hana.
     namespace literals { }
-}}
+}}}
 
 // Include config.hpp first, so that warning messages about
 // compiler support appear as soon as possible.

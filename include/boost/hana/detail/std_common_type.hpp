@@ -14,7 +14,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <utility>
 
 
-namespace boost { namespace hana { namespace detail {
+namespace boost { namespace hana { inline namespace v1 { namespace detail {
     //! @ingroup group-details
     //! Equivalent to `std::common_type`, except it is SFINAE-friendly and
     //! does not support custom specializations.
@@ -29,6 +29,6 @@ namespace boost { namespace hana { namespace detail {
             decltype(true ? std::declval<T>() : std::declval<U>())
         >::type;
     };
-}}} // end namespace boost::hana::detail
+}}}} // end namespace boost::hana::v1::detail
 
 #endif // !BOOST_HANA_DETAIL_STD_COMMON_TYPE_HPP

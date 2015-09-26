@@ -13,7 +13,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/core/when.hpp>
 
 
-namespace boost { namespace hana { namespace detail { namespace variadic {
+namespace boost { namespace hana { inline namespace v1 { namespace detail { namespace variadic {
     template <unsigned int n, typename = when<true>>
     struct foldr1_impl;
 
@@ -202,6 +202,6 @@ namespace boost { namespace hana { namespace detail { namespace variadic {
     };
 
     constexpr foldr_t foldr{};
-}}}} // end namespace boost::hana::detail::variadic
+}}}}} // end namespace boost::hana::v1::detail::variadic
 
 #endif // !BOOST_HANA_DETAIL_VARIADIC_FOLDR1_HPP

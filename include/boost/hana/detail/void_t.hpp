@@ -10,9 +10,9 @@ Distributed under the Boost Software License, Version 1.0.
 #ifndef BOOST_HANA_DETAIL_VOID_T_HPP
 #define BOOST_HANA_DETAIL_VOID_T_HPP
 
-namespace boost { namespace hana { namespace detail {
+namespace boost { namespace hana { inline namespace v1 { namespace detail {
     template <typename ...>
     using void_t = void;
-}}}
+}}}} // end namespace boost::hana::v1::detail
 
 #endif // !BOOST_HANA_DETAIL_VOID_T_HPP

@@ -21,7 +21,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <type_traits>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     namespace ext { namespace boost { namespace mpl {
         //! @ingroup group-ext
         //! Adapter for IntegralConstants from the Boost.MPL.
@@ -66,6 +66,6 @@ namespace boost { namespace hana {
             return ::boost::mpl::integral_c<T, N::value>{};
         }
     };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_EXT_BOOST_MPL_INTEGRAL_C_HPP

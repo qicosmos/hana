@@ -13,7 +13,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/core/when.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! Left-fold of a structure using a binary operation and an optional
     //! initial reduction state.
     //! @relates Foldable
@@ -90,6 +90,6 @@ namespace boost { namespace hana {
 
     constexpr fold_left_t fold_left{};
 #endif
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FWD_FOLD_LEFT_HPP

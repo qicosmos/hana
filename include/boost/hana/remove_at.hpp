@@ -24,7 +24,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <utility>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! @cond
     template <typename Xs, typename N>
     constexpr auto remove_at_t::operator()(Xs&& xs, N const& n) const {
@@ -80,6 +80,6 @@ namespace boost { namespace hana {
         constexpr decltype(auto) operator()(Xs&& xs) const
         { return hana::remove_at(static_cast<Xs&&>(xs), hana::size_c<n>); }
     };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_REMOVE_AT_HPP

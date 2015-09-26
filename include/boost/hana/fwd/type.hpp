@@ -13,7 +13,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/fwd/core/make.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! Base class of `hana::type`; used for pattern-matching.
     //! @relates hana::type
     //!
@@ -454,6 +454,6 @@ namespace boost { namespace hana {
     //! @include example/type/trait.cpp
     template <template <typename ...> class F>
     constexpr auto trait = hana::integral(hana::metafunction<F>);
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FWD_TYPE_HPP

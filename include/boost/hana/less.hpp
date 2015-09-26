@@ -35,7 +35,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/value.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! @cond
     template <typename X, typename Y>
     constexpr auto less_t::operator()(X&& x, Y&& y) const {
@@ -137,6 +137,6 @@ namespace boost { namespace hana {
         static constexpr auto apply(Xs const& xs, Ys const& ys)
         { return hana::lexicographical_compare(xs, ys); }
     };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_LESS_HPP

@@ -13,7 +13,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/core/when.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! Dual operation to `fold_right` for sequences.
     //! @relates Sequence
     //!
@@ -79,6 +79,6 @@ namespace boost { namespace hana {
     template <typename S>
     constexpr unfold_right_t<S> unfold_right{};
 #endif
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FWD_UNFOLD_RIGHT_HPP

@@ -13,7 +13,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/core/when.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! Returns the set-theoretic difference of two sets.
     //! @relates hana::set
     //!
@@ -66,6 +66,6 @@ namespace boost { namespace hana {
 
     constexpr difference_t difference{};
 #endif
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FWD_DIFFERENCE_HPP

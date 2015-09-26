@@ -13,7 +13,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/core/when.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! Returns a `Sequence` containing the members of a `Struct`.
     //! @relates Struct
     //!
@@ -40,6 +40,6 @@ namespace boost { namespace hana {
 
     constexpr members_t members{};
 #endif
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FWD_MEMBERS_HPP

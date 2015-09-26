@@ -22,7 +22,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <utility>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! @cond
     template <typename Xs>
     constexpr auto reverse_t::operator()(Xs&& xs) const {
@@ -55,6 +55,6 @@ namespace boost { namespace hana {
             return reverse_helper(static_cast<Xs&&>(xs), std::make_index_sequence<N>{});
         }
     };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_REVERSE_HPP

@@ -13,7 +13,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/core/when.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     // Note: This function is documented per datatype/concept only.
     //! @cond
     template <typename T, typename = void>
@@ -54,6 +54,6 @@ namespace boost { namespace hana {
         return tag-dispatched;
     };
 #endif
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FWD_INSERT_HPP

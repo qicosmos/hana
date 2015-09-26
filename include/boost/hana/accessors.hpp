@@ -16,7 +16,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/core/dispatch.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     template <typename S>
     struct accessors_t {
     #ifndef BOOST_HANA_CONFIG_DISABLE_CONCEPT_CHECKS
@@ -50,6 +50,6 @@ namespace boost { namespace hana {
     >>
         : S::hana_accessors_impl
     { };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_ACCESSORS_HPP

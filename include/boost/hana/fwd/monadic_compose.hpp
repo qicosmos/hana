@@ -13,7 +13,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/core/when.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! Composition of monadic functions.
     //! @relates Monad
     //!
@@ -69,6 +69,6 @@ namespace boost { namespace hana {
 
     constexpr monadic_compose_t monadic_compose{};
 #endif
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FWD_MONADIC_COMPOSE_HPP

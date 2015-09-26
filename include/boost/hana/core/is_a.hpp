@@ -18,7 +18,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <type_traits>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //////////////////////////////////////////////////////////////////////////
     // is_a
     //////////////////////////////////////////////////////////////////////////
@@ -35,6 +35,6 @@ namespace boost { namespace hana {
         constexpr auto operator()(T const&) const
         { return hana::is_a<DataType, T>; }
     };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_CORE_IS_A_HPP

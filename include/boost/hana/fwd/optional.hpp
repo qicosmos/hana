@@ -14,7 +14,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/fwd/core/make.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! @ingroup group-datatypes
     //! Optional value whose optional-ness is known at compile-time.
     //!
@@ -468,6 +468,6 @@ namespace boost { namespace hana {
 
     constexpr is_nothing_t is_nothing{};
 #endif
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FWD_OPTIONAL_HPP

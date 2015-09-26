@@ -17,7 +17,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <utility>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! @ingroup group-functional
     //! Partially apply a function to some arguments.
     //!
@@ -95,6 +95,6 @@ namespace boost { namespace hana {
 
     constexpr make_reverse_partial_t reverse_partial{};
 #endif
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FUNCTIONAL_REVERSE_PARTIAL_HPP

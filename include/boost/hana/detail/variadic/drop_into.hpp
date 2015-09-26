@@ -14,7 +14,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <utility>
 
 
-namespace boost { namespace hana { namespace detail { namespace variadic {
+namespace boost { namespace hana { inline namespace v1 { namespace detail { namespace variadic {
     template <std::size_t n, typename F, typename = std::make_index_sequence<n>>
     struct dropper;
 
@@ -40,6 +40,6 @@ namespace boost { namespace hana { namespace detail { namespace variadic {
 
     template <std::size_t n>
     constexpr make_dropper<n> drop_into{};
-}}}} // end namespace boost::hana::detail::variadic
+}}}}} // end namespace boost::hana::v1::detail::variadic
 
 #endif // !BOOST_HANA_DETAIL_VARIADIC_DROP_INTO_HPP

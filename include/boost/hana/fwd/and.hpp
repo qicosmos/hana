@@ -13,7 +13,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/core/when.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! Return whether all the arguments are true-valued.
     //! @relates Logical
     //!
@@ -47,6 +47,6 @@ namespace boost { namespace hana {
 
     constexpr and_t and_{};
 #endif
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FWD_AND_HPP

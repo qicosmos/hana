@@ -13,7 +13,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/core/when.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! Insert several values at a given index in a sequence.
     //! @relates Sequence
     //!
@@ -51,6 +51,6 @@ namespace boost { namespace hana {
 
     constexpr insert_range_t insert_range{};
 #endif
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FWD_INSERT_RANGE_HPP

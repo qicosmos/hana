@@ -27,7 +27,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <utility>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! @cond
     template <typename Xs>
     constexpr auto group_t::operator()(Xs&& xs) const {
@@ -152,6 +152,6 @@ namespace boost { namespace hana {
         static constexpr auto apply(Xs&& xs)
         { return group_impl::apply(static_cast<Xs&&>(xs), hana::equal); }
     };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_GROUP_HPP

@@ -13,7 +13,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/core/when.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! Generalized integer modulus.
     //! @relates EuclideanRing
     //!
@@ -56,6 +56,6 @@ namespace boost { namespace hana {
 
     constexpr mod_t mod{};
 #endif
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FWD_MOD_HPP

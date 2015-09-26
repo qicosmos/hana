@@ -15,7 +15,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <utility>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! @ingroup group-functional
     //! Return a constant function returning `x` regardless of the
     //! argument(s) it is invoked with.
@@ -58,6 +58,6 @@ namespace boost { namespace hana {
 
     constexpr detail::create<_always> always{};
 #endif
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FUNCTIONAL_ALWAYS_HPP

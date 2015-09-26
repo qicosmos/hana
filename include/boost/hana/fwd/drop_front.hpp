@@ -13,7 +13,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/core/when.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! Drop the first `n` elements of an iterable, and return the rest.
     //! @relates Iterable
     //!
@@ -60,6 +60,6 @@ namespace boost { namespace hana {
 
     constexpr drop_front_t drop_front{};
 #endif
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FWD_DROP_FRONT_HPP

@@ -18,7 +18,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <type_traits>
 
 
-namespace boost { namespace hana { namespace traits {
+namespace boost { namespace hana { inline namespace v1 { namespace traits {
     namespace detail {
         template <template <typename ...> class F>
         struct hana_trait {
@@ -211,6 +211,6 @@ namespace boost { namespace hana { namespace traits {
     };
 
     constexpr declval_t declval{};
-}}} // end namespace boost::hana::traits
+}}}} // end namespace boost::hana::v1::traits
 
 #endif // !BOOST_HANA_TRAITS_HPP

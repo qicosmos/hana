@@ -18,13 +18,13 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/second.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     template <typename P>
     struct Product {
         using Tag = typename tag_of<P>::type;
         static constexpr bool value = !is_default<first_impl<Tag>>::value &&
                                       !is_default<second_impl<Tag>>::value;
     };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_CONCEPT_PRODUCT_HPP

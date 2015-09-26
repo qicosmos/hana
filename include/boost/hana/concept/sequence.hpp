@@ -16,7 +16,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/core/when.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     namespace detail {
         template <typename S, typename Tag = typename tag_of<S>::type>
         struct sequence_dispatch {
@@ -33,6 +33,6 @@ namespace boost { namespace hana {
     struct Sequence<S, when<condition>>
         : detail::sequence_dispatch<S>
     { };
-}}
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_CONCEPT_SEQUENCE_HPP

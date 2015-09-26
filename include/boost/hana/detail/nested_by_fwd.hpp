@@ -10,7 +10,7 @@ Distributed under the Boost Software License, Version 1.0.
 #ifndef BOOST_HANA_DETAIL_NESTED_BY_FWD_HPP
 #define BOOST_HANA_DETAIL_NESTED_BY_FWD_HPP
 
-namespace boost { namespace hana { namespace detail {
+namespace boost { namespace hana { inline namespace v1 { namespace detail {
     template <typename Algorithm>
     struct nested_by_t {
         template <typename Predicate, typename Object>
@@ -47,6 +47,6 @@ namespace boost { namespace hana { namespace detail {
 
     template <typename Algorithm>
     constexpr nested_by_t<Algorithm> nested_by<Algorithm>::by;
-}}} // end namespace boost::hana::detail
+}}}} // end namespace boost::hana::v1::detail
 
 #endif // !BOOST_HANA_DETAIL_NESTED_BY_FWD_HPP

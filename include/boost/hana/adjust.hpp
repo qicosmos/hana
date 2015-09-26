@@ -18,7 +18,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/equal.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! @cond
     template <typename Xs, typename Value, typename F>
     constexpr auto adjust_t::operator()(Xs&& xs, Value&& value, F&& f) const {
@@ -49,6 +49,6 @@ namespace boost { namespace hana {
             );
         }
     };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_ADJUST_HPP

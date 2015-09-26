@@ -13,7 +13,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/core/when.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! Conditionally return one of two values based on a condition.
     //! @relates Logical
     //!
@@ -51,6 +51,6 @@ namespace boost { namespace hana {
 
     constexpr if_t if_{};
 #endif
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FWD_IF_HPP

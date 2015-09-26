@@ -18,7 +18,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/functional/partial.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     namespace detail {
         struct monadic_compose_helper {
             template <typename F, typename G, typename X>
@@ -45,6 +45,6 @@ namespace boost { namespace hana {
         );
     }
     //! @endcond
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_MONADIC_COMPOSE_HPP

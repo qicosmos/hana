@@ -19,7 +19,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/transform.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! @cond
     template <typename Map>
     constexpr auto keys_t::operator()(Map&& map) const {
@@ -42,6 +42,6 @@ namespace boost { namespace hana {
             return hana::transform(hana::accessors<S>(), hana::first);
         }
     };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_KEYS_HPP

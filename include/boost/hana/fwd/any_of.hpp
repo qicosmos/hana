@@ -13,7 +13,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/core/when.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! Returns whether any key of the structure satisfies the `predicate`.
     //! @relates Searchable
     //!
@@ -47,6 +47,6 @@ namespace boost { namespace hana {
 
     constexpr any_of_t any_of{};
 #endif
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FWD_ANY_OF_HPP

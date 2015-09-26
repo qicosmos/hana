@@ -20,7 +20,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <type_traits>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! @cond
     template <typename X>
     constexpr decltype(auto) negate_t::operator()(X&& x) const {
@@ -55,6 +55,6 @@ namespace boost { namespace hana {
         static constexpr decltype(auto) apply(X&& x)
         { return -static_cast<X&&>(x); }
     };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_NEGATE_HPP

@@ -15,7 +15,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <utility>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! @ingroup group-functional
     //! Return a function computing the fixed point of a function.
     //!
@@ -77,6 +77,6 @@ namespace boost { namespace hana {
         { return std::move(f)(fix(f), static_cast<X&&>(x)...); }
     };
 #endif
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FUNCTIONAL_FIX_HPP

@@ -30,7 +30,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <type_traits>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     namespace ext { namespace std { struct ratio_tag; }}
 
     template <std::intmax_t num, std::intmax_t den>
@@ -129,6 +129,6 @@ namespace boost { namespace hana {
         static constexpr std::ratio<0> apply(R1 const&, R2 const&)
         { return {}; }
     };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_EXT_STD_RATIO_HPP

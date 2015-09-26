@@ -18,7 +18,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <utility>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     namespace ext { namespace std { struct pair_tag; }}
 
     template <typename First, typename Second>
@@ -51,6 +51,6 @@ namespace boost { namespace hana {
         static constexpr decltype(auto) apply(P&& p)
         { return static_cast<P&&>(p).second; }
     };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_EXT_STD_PAIR_HPP

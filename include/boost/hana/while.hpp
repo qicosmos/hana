@@ -23,7 +23,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <type_traits>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! @cond
     template <typename Pred, typename State, typename F>
     constexpr decltype(auto) while_t::operator()(Pred&& pred, State&& state, F&& f) const {
@@ -111,6 +111,6 @@ namespace boost { namespace hana {
                                 static_cast<F&&>(f));
         }
     };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_WHILE_HPP

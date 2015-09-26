@@ -13,7 +13,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/core/when.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! Perform an action on each element of a foldable, discarding
     //! the result each time.
     //! @relates Foldable
@@ -49,6 +49,6 @@ namespace boost { namespace hana {
 
     constexpr for_each_t for_each{};
 #endif
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FWD_FOR_EACH_HPP

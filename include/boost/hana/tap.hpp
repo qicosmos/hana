@@ -18,7 +18,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/lift.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     template <typename M>
     struct tap_t {
     #ifndef BOOST_HANA_CONFIG_DISABLE_CONCEPT_CHECKS
@@ -53,6 +53,6 @@ namespace boost { namespace hana {
         static constexpr auto apply(F&& f)
         { return hana::partial(detail::tap_helper<M>{}, static_cast<F&&>(f)); }
     };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_TAP_HPP

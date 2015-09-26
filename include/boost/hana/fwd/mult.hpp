@@ -13,7 +13,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/core/when.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! Associative operation of a `Ring`.
     //! @relates Ring
     //!
@@ -57,6 +57,6 @@ namespace boost { namespace hana {
 
     constexpr mult_t mult{};
 #endif
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FWD_MULT_HPP

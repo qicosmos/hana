@@ -16,7 +16,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <cstddef>
 
 
-namespace boost { namespace hana { namespace detail { namespace variadic {
+namespace boost { namespace hana { inline namespace v1 { namespace detail { namespace variadic {
     template <std::size_t n>
     struct split_at_t {
         template <typename F, typename X1, typename X2, typename X3, typename X4, typename X5, typename X6, typename X7, typename X8, typename ...Xs>
@@ -147,6 +147,6 @@ namespace boost { namespace hana { namespace detail { namespace variadic {
 
     template <std::size_t n>
     constexpr _makesplit_at_t<n> split_at{};
-}}}} // end namespace boost::hana::detail::variadic
+}}}}} // end namespace boost::hana::v1::detail::variadic
 
 #endif // !BOOST_HANA_DETAIL_VARIADIC_SPLIT_AT_HPP

@@ -13,7 +13,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/core/when.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! Apply a function on all the elements of a structure satisfying a
     //! `predicate`.
     //! @relates Functor
@@ -57,6 +57,6 @@ namespace boost { namespace hana {
 
     constexpr adjust_if_t adjust_if{};
 #endif
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FWD_ADJUST_IF_HPP

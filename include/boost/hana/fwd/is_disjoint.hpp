@@ -13,7 +13,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/core/when.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! Returns whether two `Searchable`s are disjoint.
     //! @relates Searchable
     //!
@@ -52,6 +52,6 @@ namespace boost { namespace hana {
 
     constexpr is_disjoint_t is_disjoint{};
 #endif
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FWD_IS_DISJOINT_HPP

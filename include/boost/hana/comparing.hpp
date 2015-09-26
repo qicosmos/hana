@@ -17,7 +17,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <type_traits>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     namespace detail {
         template <typename F>
         struct equal_by {
@@ -39,6 +39,6 @@ namespace boost { namespace hana {
         return detail::equal_by<typename std::decay<F>::type>{static_cast<F&&>(f)};
     }
     //! @endcond
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_COMPARING_HPP

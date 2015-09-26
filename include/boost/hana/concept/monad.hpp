@@ -18,13 +18,13 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/flatten.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     template <typename M>
     struct Monad {
         using Tag = typename tag_of<M>::type;
         static constexpr bool value = !is_default<flatten_impl<Tag>>::value ||
                                       !is_default<chain_impl<Tag>>::value;
     };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_CONCEPT_MONAD_HPP

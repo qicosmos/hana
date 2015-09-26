@@ -22,7 +22,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/second.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! @cond
     template <typename S>
     struct unfold_right_t {
@@ -65,6 +65,6 @@ namespace boost { namespace hana {
             );
         }
     };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_UNFOLD_RIGHT_HPP

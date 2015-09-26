@@ -13,7 +13,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/detail/decay.hpp>
 
 
-namespace boost { namespace hana { namespace detail {
+namespace boost { namespace hana { inline namespace v1 { namespace detail {
     //! @ingroup group-details
     //! Implementation of the generic `std::make_xxx` pattern for arbitrary
     //! `xxx`s.
@@ -27,6 +27,6 @@ namespace boost { namespace hana { namespace detail {
             };
         }
     };
-}}} // end namespace boost::hana::detail
+}}}} // end namespace boost::hana::v1::detail
 
 #endif // !BOOST_HANA_DETAIL_CREATE_HPP

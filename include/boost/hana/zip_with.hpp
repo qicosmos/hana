@@ -23,7 +23,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <utility>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! @cond
     template <typename F, typename Xs, typename ...Ys>
     constexpr auto zip_with_t::operator()(F&& f, Xs&& xs, Ys&& ...ys) const {
@@ -64,6 +64,6 @@ namespace boost { namespace hana {
                               static_cast<X&&>(x), static_cast<Xs&&>(xs)...);
         }
     };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_ZIP_WITH_HPP

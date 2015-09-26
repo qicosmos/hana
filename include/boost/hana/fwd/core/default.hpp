@@ -10,7 +10,7 @@ Distributed under the Boost Software License, Version 1.0.
 #ifndef BOOST_HANA_FWD_CORE_DEFAULT_HPP
 #define BOOST_HANA_FWD_CORE_DEFAULT_HPP
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! @ingroup group-core
     //! Mark a tag-dispatched method implementation as a default implementation.
     //!
@@ -48,6 +48,6 @@ namespace boost { namespace hana {
     template <typename T, typename = void>
     struct is_default;
 #endif
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FWD_CORE_DEFAULT_HPP

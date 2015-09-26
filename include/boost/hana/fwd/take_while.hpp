@@ -13,7 +13,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/core/when.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! Take elements from a sequence while the `predicate` is satisfied.
     //! @relates Sequence
     //!
@@ -50,6 +50,6 @@ namespace boost { namespace hana {
 
     constexpr take_while_t take_while{};
 #endif
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FWD_TAKE_WHILE_HPP

@@ -19,7 +19,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <type_traits>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     namespace ext { namespace std {
         template <typename T>
         struct integral_constant_tag { using value_type = T; };
@@ -71,6 +71,6 @@ namespace boost { namespace hana {
             return std::integral_constant<T, N::value>{};
         }
     };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_EXT_STD_INTEGRAL_CONSTANT_HPP

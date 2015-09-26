@@ -10,7 +10,7 @@ Distributed under the Boost Software License, Version 1.0.
 #ifndef BOOST_HANA_FWD_REVERSE_FOLD_HPP
 #define BOOST_HANA_FWD_REVERSE_FOLD_HPP
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! Equivalent to `reverse_fold` in Boost.Fusion and Boost.MPL.
     //! @relates Foldable
     //!
@@ -76,6 +76,6 @@ namespace boost { namespace hana {
 
     constexpr reverse_fold_t reverse_fold{};
 #endif
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FWD_REVERSE_FOLD_HPP

@@ -15,7 +15,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <utility>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! @ingroup group-functional
     //! Invoke a function with its two first arguments reversed.
     //!
@@ -67,6 +67,6 @@ namespace boost { namespace hana {
 
     constexpr detail::create<flip_t> flip{};
 #endif
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FUNCTIONAL_FLIP_HPP

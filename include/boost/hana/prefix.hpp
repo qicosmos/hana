@@ -20,7 +20,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/lift.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! @cond
     template <typename Xs, typename Pref>
     constexpr auto prefix_t::operator()(Xs&& xs, Pref&& pref) const {
@@ -46,6 +46,6 @@ namespace boost { namespace hana {
                 hana::partial(hana::append, hana::lift<M>(static_cast<Z&&>(z))));
         }
     };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_PREFIX_HPP

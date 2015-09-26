@@ -14,7 +14,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/detail/nested_by_fwd.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! Sort a sequence, optionally based on a custom `predicate`.
     //! @relates Sequence
     //!
@@ -97,6 +97,6 @@ namespace boost { namespace hana {
 
     constexpr sort_t sort{};
 #endif
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FWD_SORT_HPP

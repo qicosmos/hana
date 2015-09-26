@@ -13,7 +13,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/core/when.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! Replace all the elements of a structure with a fixed value.
     //! @relates Functor
     //!
@@ -51,6 +51,6 @@ namespace boost { namespace hana {
 
     constexpr fill_t fill{};
 #endif
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FWD_FILL_HPP

@@ -10,7 +10,7 @@ Distributed under the Boost Software License, Version 1.0.
 #ifndef BOOST_HANA_FWD_CONCEPT_MONAD_PLUS_HPP
 #define BOOST_HANA_FWD_CONCEPT_MONAD_PLUS_HPP
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! @ingroup group-concepts
     //! The `MonadPlus` concept represents Monads with a monoidal structure.
     //!
@@ -73,6 +73,6 @@ namespace boost { namespace hana {
     //! `hana::optional`, `hana::tuple`
     template <typename M>
     struct MonadPlus;
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FWD_CONCEPT_MONAD_PLUS_HPP

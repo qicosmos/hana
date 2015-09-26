@@ -10,7 +10,7 @@ Distributed under the Boost Software License, Version 1.0.
 #ifndef BOOST_HANA_FUNCTIONAL_APPLY_HPP
 #define BOOST_HANA_FUNCTIONAL_APPLY_HPP
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! @ingroup group-functional
     //! Invokes a Callable with the given arguments.
     //!
@@ -77,6 +77,6 @@ namespace boost { namespace hana {
 
     constexpr apply_t apply{};
 #endif
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FUNCTIONAL_APPLY_HPP

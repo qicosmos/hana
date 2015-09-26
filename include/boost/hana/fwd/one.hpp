@@ -13,7 +13,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/core/when.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! Identity of the `Ring` multiplication.
     //! @relates Ring
     //!
@@ -39,6 +39,6 @@ namespace boost { namespace hana {
     template <typename R>
     constexpr one_t<R> one{};
 #endif
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FWD_ONE_HPP

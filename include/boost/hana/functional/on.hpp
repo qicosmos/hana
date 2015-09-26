@@ -16,7 +16,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <utility>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! @ingroup group-functional
     //! Invoke a function with the result of invoking another function on
     //! each argument.
@@ -77,6 +77,6 @@ namespace boost { namespace hana {
 
     constexpr auto on = infix(detail::create<on_t>{});
 #endif
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FUNCTIONAL_ON_HPP

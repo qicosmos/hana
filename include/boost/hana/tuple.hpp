@@ -38,7 +38,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <utility>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     namespace detail {
         template <typename Xs, typename Ys, std::size_t ...n>
         constexpr void assign(Xs& xs, Ys&& ys, std::index_sequence<n...>) {
@@ -294,6 +294,6 @@ namespace boost { namespace hana {
             return helper<index>(static_cast<Xs&&>(xs), hana::bool_c<index == len>);
         }
     };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_TUPLE_HPP

@@ -10,7 +10,7 @@ Distributed under the Boost Software License, Version 1.0.
 #ifndef BOOST_HANA_DETAIL_TYPE_FOLDL1_HPP
 #define BOOST_HANA_DETAIL_TYPE_FOLDL1_HPP
 
-namespace boost { namespace hana { namespace detail {
+namespace boost { namespace hana { inline namespace v1 { namespace detail {
     template <unsigned n>
     struct type_foldl1_t;
 
@@ -137,6 +137,6 @@ namespace boost { namespace hana { namespace detail {
         using type = typename type_foldl1_t<(sizeof...(xn) > 6 ? 6 : sizeof...(xn))>
                      ::template result<f, x1, xn...>;
     };
-}}} // end namespace boost::hana::detail
+}}}} // end namespace boost::hana::v1::detail
 
 #endif // !BOOST_HANA_DETAIL_TYPE_FOLDL1_HPP

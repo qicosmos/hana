@@ -33,7 +33,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <utility>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     namespace detail {
         //////////////////////////////////////////////////////////////////////
         // elt<n, Xn>
@@ -247,6 +247,6 @@ namespace boost { namespace hana {
         { return hana::bool_c<sizeof...(Xs) == 0>; }
     };
 #endif
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_BASIC_TUPLE_HPP

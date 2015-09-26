@@ -21,7 +21,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/unpack.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! @cond
     template <typename Xs, typename Value>
     constexpr auto fill_t::operator()(Xs&& xs, Value&& value) const {
@@ -68,6 +68,6 @@ namespace boost { namespace hana {
             return hana::unpack(xs, filler<V>{v});
         }
     };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FILL_HPP

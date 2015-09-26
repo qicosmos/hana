@@ -13,7 +13,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/core/when.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! Prepend an element to a monadic structure.
     //! @relates MonadPlus
     //!
@@ -67,6 +67,6 @@ namespace boost { namespace hana {
 
     constexpr prepend_t prepend{};
 #endif
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FWD_PREPEND_HPP

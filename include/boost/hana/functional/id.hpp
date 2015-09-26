@@ -10,7 +10,7 @@ Distributed under the Boost Software License, Version 1.0.
 #ifndef BOOST_HANA_FUNCTIONAL_ID_HPP
 #define BOOST_HANA_FUNCTIONAL_ID_HPP
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! @ingroup group-functional
     //! The identity function -- returns its argument unchanged.
     //!
@@ -30,6 +30,6 @@ namespace boost { namespace hana {
 
     constexpr id_t id{};
 #endif
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FUNCTIONAL_ID_HPP

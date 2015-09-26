@@ -19,7 +19,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/tail.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     template <typename It>
     struct Iterable {
         using Tag = typename tag_of<It>::type;
@@ -27,6 +27,6 @@ namespace boost { namespace hana {
                                       !is_default<tail_impl<Tag>>::value &&
                                       !is_default<is_empty_impl<Tag>>::value;
     };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_CONCEPT_ITERABLE_HPP

@@ -15,7 +15,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <type_traits>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     template <typename Method, typename>
     struct is_default : std::false_type { };
 
@@ -25,6 +25,6 @@ namespace boost { namespace hana {
     )>
         : std::true_type
     { };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_CORE_DEFAULT_HPP

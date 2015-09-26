@@ -16,7 +16,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <cstddef>
 
 
-namespace boost { namespace hana { namespace detail {
+namespace boost { namespace hana { inline namespace v1 { namespace detail {
     template <typename N>
     constexpr N factorial(N n) {
         N result = 1;
@@ -99,6 +99,6 @@ namespace boost { namespace hana { namespace detail {
         return M < N || detail::lexicographical_compare(a.begin(), a.end(), b.begin(), b.end());
     }
 
-}}} // end namespace boost::hana::detail
+}}}} // end namespace boost::hana::v1::detail
 
 #endif // !BOOST_HANA_DETAIL_ARRAY_HPP

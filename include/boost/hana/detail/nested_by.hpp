@@ -16,7 +16,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/functional/partial.hpp>
 
 
-namespace boost { namespace hana { namespace detail {
+namespace boost { namespace hana { inline namespace v1 { namespace detail {
     //! @cond
     template <typename Algorithm>
     template <typename Predicate, typename Object>
@@ -34,6 +34,6 @@ namespace boost { namespace hana { namespace detail {
                              static_cast<Predicate&&>(predicate));
     }
     //! @endcond
-}}} // end namespace boost::hana::detail
+}}}} // end namespace boost::hana::v1::detail
 
 #endif // !BOOST_HANA_DETAIL_NESTED_BY_HPP

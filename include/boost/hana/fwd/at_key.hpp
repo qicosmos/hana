@@ -13,7 +13,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/core/when.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! Returns the value associated to the given key in a structure, or fail.
     //! @relates Searchable
     //!
@@ -54,6 +54,6 @@ namespace boost { namespace hana {
 
     constexpr at_key_t at_key{};
 #endif
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FWD_AT_KEY_HPP

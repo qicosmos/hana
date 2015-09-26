@@ -19,7 +19,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/while.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     template <typename L>
     struct Logical {
         using Tag = typename tag_of<L>::type;
@@ -27,6 +27,6 @@ namespace boost { namespace hana {
                                       !is_default<not_impl<Tag>>::value &&
                                       !is_default<while_impl<Tag>>::value;
     };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_CONCEPT_LOGICAL_HPP

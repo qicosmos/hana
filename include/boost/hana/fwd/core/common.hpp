@@ -10,7 +10,7 @@ Distributed under the Boost Software License, Version 1.0.
 #ifndef BOOST_HANA_FWD_CORE_COMMON_HPP
 #define BOOST_HANA_FWD_CORE_COMMON_HPP
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! @ingroup group-core
     //! %Metafunction returning the common data type between two data types.
     //!
@@ -95,6 +95,6 @@ namespace boost { namespace hana {
     //! @include example/core/common/common_t.cpp
     template <typename T, typename U>
     using common_t = typename common<T, U>::type;
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FWD_CORE_COMMON_HPP

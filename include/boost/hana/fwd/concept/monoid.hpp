@@ -10,7 +10,7 @@ Distributed under the Boost Software License, Version 1.0.
 #ifndef BOOST_HANA_FWD_CONCEPT_MONOID_HPP
 #define BOOST_HANA_FWD_CONCEPT_MONOID_HPP
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! @ingroup group-concepts
     //! The `Monoid` concept represents data types with an associative
     //! binary operation that has an identity.
@@ -92,6 +92,6 @@ namespace boost { namespace hana {
     //! [2]: http://en.wikipedia.org/wiki/Monoid#Monoid_homomorphisms
     template <typename M>
     struct Monoid;
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FWD_CONCEPT_MONOID_HPP

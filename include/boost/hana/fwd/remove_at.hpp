@@ -15,7 +15,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <cstddef>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! Remove the element at a given index from a sequence.
     //! @relates Sequence
     //!
@@ -76,6 +76,6 @@ namespace boost { namespace hana {
     template <std::size_t n>
     constexpr remove_at_c_t<n> remove_at_c{};
 #endif
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FWD_REMOVE_AT_HPP

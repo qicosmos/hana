@@ -20,7 +20,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/tail.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! @cond
     template <typename Xs, typename N>
     constexpr auto drop_front_exactly_t::operator()(Xs&& xs, N const& n) const {
@@ -55,6 +55,6 @@ namespace boost { namespace hana {
             return hana::iterate<n>(hana::tail)(static_cast<Xs&&>(xs));
         }
     };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_DROP_FRONT_EXACTLY_HPP

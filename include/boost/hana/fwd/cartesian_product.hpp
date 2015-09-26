@@ -13,7 +13,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/core/when.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! Computes the cartesian product of a sequence of sequences.
     //! @relates Sequence
     //!
@@ -64,6 +64,6 @@ namespace boost { namespace hana {
 
     constexpr cartesian_product_t cartesian_product{};
 #endif
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FWD_CARTESIAN_PRODUCT_HPP

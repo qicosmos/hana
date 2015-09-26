@@ -15,7 +15,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/core/dispatch.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! @cond
     template <typename Xs, typename Ys>
     constexpr auto union_t::operator()(Xs&& xs, Ys&& ys) const {
@@ -33,6 +33,6 @@ namespace boost { namespace hana {
         template <typename ...Args>
         static constexpr auto apply(Args&& ...) = delete;
     };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_UNION_HPP

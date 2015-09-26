@@ -24,7 +24,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <utility>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     namespace ext { namespace std { struct integer_sequence_tag; }}
 
     template <typename T, T ...v>
@@ -96,6 +96,6 @@ namespace boost { namespace hana {
         static constexpr auto apply(std::integer_sequence<T, xs...>)
         { return hana::bool_c<sizeof...(xs) == 0>; }
     };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_EXT_STD_INTEGER_SEQUENCE_HPP

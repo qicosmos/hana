@@ -13,7 +13,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/fwd/fold_left.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! Equivalent to `fold_left`; provided for convenience.
     //! @relates Foldable
     //!
@@ -32,6 +32,6 @@ namespace boost { namespace hana {
     //! -------
     //! @include example/fold.cpp
     constexpr auto fold = fold_left;
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FWD_FOLD_HPP

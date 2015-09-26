@@ -24,7 +24,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <utility>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! @cond
     template <typename Xs, typename From, typename To>
     constexpr auto remove_range_t::operator()(Xs&& xs, From const& from, To const& to) const {
@@ -94,6 +94,6 @@ namespace boost { namespace hana {
                                       hana::size_c<to>);
         }
     };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_REMOVE_RANGE_HPP

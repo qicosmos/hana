@@ -10,7 +10,7 @@ Distributed under the Boost Software License, Version 1.0.
 #ifndef BOOST_HANA_FWD_CONCEPT_APPLICATIVE_HPP
 #define BOOST_HANA_FWD_CONCEPT_APPLICATIVE_HPP
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! @ingroup group-concepts
     //! The `Applicative` concept represents `Functor`s with the ability
     //! to lift values and combine computations.
@@ -101,6 +101,6 @@ namespace boost { namespace hana {
     //! @endcode
     template <typename A>
     struct Applicative;
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FWD_CONCEPT_APPLICATIVE_HPP

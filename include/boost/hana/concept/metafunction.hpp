@@ -15,7 +15,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/core/tag_of.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     namespace detail {
         template <typename F, typename Tag = typename tag_of<F>::type>
         struct metafunction_dispatch {
@@ -32,6 +32,6 @@ namespace boost { namespace hana {
     struct Metafunction
         : detail::metafunction_dispatch<F>
     { };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_CONCEPT_METAFUNCTION_HPP

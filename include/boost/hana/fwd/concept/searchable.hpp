@@ -10,7 +10,7 @@ Distributed under the Boost Software License, Version 1.0.
 #ifndef BOOST_HANA_FWD_CONCEPT_SEARCHABLE_HPP
 #define BOOST_HANA_FWD_CONCEPT_SEARCHABLE_HPP
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! @ingroup group-concepts
     //! The `Searchable` concept represents structures that can be searched.
     //!
@@ -134,6 +134,6 @@ namespace boost { namespace hana {
     //! transformation.
     template <typename S>
     struct Searchable;
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FWD_CONCEPT_SEARCHABLE_HPP

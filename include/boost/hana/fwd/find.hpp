@@ -13,7 +13,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/core/when.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! Finds the value associated to the given key in a structure.
     //! @relates Searchable
     //!
@@ -54,6 +54,6 @@ namespace boost { namespace hana {
 
     constexpr find_t find{};
 #endif
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FWD_FIND_HPP

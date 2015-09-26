@@ -13,7 +13,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/detail/decay.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! @ingroup group-functional
     //! Pick one of several functions to call based on overload resolution.
     //!
@@ -82,6 +82,6 @@ namespace boost { namespace hana {
 
     constexpr make_overload_t overload{};
 #endif
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FUNCTIONAL_OVERLOAD_HPP

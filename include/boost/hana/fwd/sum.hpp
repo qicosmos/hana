@@ -14,7 +14,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/fwd/integral_constant.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! Compute the sum of the numbers of a structure.
     //! @relates Foldable
     //!
@@ -73,6 +73,6 @@ namespace boost { namespace hana {
     template <typename M = integral_constant_tag<int>>
     constexpr sum_t<M> sum{};
 #endif
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FWD_SUM_HPP

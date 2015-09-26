@@ -17,7 +17,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/unpack.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! @cond
     template <typename Xs, typename F>
     constexpr void for_each_t::operator()(Xs&& xs, F&& f) const {
@@ -56,6 +56,6 @@ namespace boost { namespace hana {
                          detail::on_each<decltype(&f)>{&f});
         }
     };
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FOR_EACH_HPP

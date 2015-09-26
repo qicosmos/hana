@@ -10,7 +10,7 @@ Distributed under the Boost Software License, Version 1.0.
 #ifndef BOOST_HANA_FWD_ORDERING_HPP
 #define BOOST_HANA_FWD_ORDERING_HPP
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! Returns a function performing `less` after applying a transformation
     //! to both arguments.
     //! @relates Orderable
@@ -57,6 +57,6 @@ namespace boost { namespace hana {
 
     constexpr ordering_t ordering{};
 #endif
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FWD_ORDERING_HPP

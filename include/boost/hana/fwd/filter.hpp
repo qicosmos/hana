@@ -13,7 +13,7 @@ Distributed under the Boost Software License, Version 1.0.
 #include <boost/hana/core/when.hpp>
 
 
-namespace boost { namespace hana {
+namespace boost { namespace hana { inline namespace v1 {
     //! Filter a monadic structure using a custom predicate.
     //! @relates MonadPlus
     //!
@@ -82,6 +82,6 @@ namespace boost { namespace hana {
 
     constexpr filter_t filter{};
 #endif
-}} // end namespace boost::hana
+}}} // end namespace boost::hana::v1
 
 #endif // !BOOST_HANA_FWD_FILTER_HPP
