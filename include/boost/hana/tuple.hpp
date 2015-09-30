@@ -14,7 +14,7 @@ Distributed under the Boost Software License, Version 1.0.
 
 #include <boost/hana/basic_tuple.hpp>
 #include <boost/hana/bool.hpp>
-#include <boost/hana/detail/decay.hpp>
+#include <boost/hana/detail/as_container_element.hpp>
 #include <boost/hana/detail/fast_and.hpp>
 #include <boost/hana/detail/index_if.hpp>
 #include <boost/hana/detail/intrinsics.hpp>
@@ -269,8 +269,8 @@ namespace boost { namespace hana {
     template <>
     struct make_impl<tuple_tag> {
         template <typename ...Xs>
-        static constexpr
-        tuple<typename detail::decay<Xs>::type...> apply(Xs&& ...xs)
+        static constexpr tuple<detail::as_container_element_t<Xs>...>
+        apply(Xs&& ...xs)
         { return {static_cast<Xs&&>(xs)...}; }
     };
 
